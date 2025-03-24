@@ -1,0 +1,24 @@
+Last login: Mon Mar 24 22:06:30 on ttys000
+tonnam@Pakornkiat ~ % body {
+  margin: 0;
+}
+.box {
+  display: flex;
+  width: 100%;
+}
+.b1,
+.b2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.b1 {
+  background-color: rgb(131, 35, 160);
+}
+.b2 {
+  background-color:  rgb(112, 137, 72);
+}
+
+
