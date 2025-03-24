@@ -1,5 +1,4 @@
-Last login: Mon Mar 24 23:17:03 on ttys000
-tonnam@Pakornkiat ~ % let ft_list = document.getElementById("ft_list");
+let ft_list = document.getElementById("ft_list");
 const create = () => {
   let txt = prompt("Please Enter TODO LIST :");
   const name = new Date().getTime();
