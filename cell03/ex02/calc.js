@@ -1,5 +1,17 @@
-Last login: Mon Mar 24 22:28:55 on ttys000
-tonnam@Pakornkiat ~ % >....                                                     
+setInterval(function () {
+  alert("Please, use me...");
+}, 30000);
+
+const calculate = () => {
+  const num1 = parseFloat(document.getElementById("num1").value);
+  const num2 = parseFloat(document.getElementById("num2").value);
+  const operator = document.getElementById("operator").value;
+  let ans = 0;
+  if (isNaN(num1) || isNaN(num2)) {
+    console.log("Error :(");
+    alert("Error :(");
+    return;
+  }
   if (num1 < 0 || num2 < 0) {
     console.log("Error :(");
     alert("Error :(");
