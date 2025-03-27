@@ -1,0 +1,138 @@
+/* General reset */
+* {
+    padding: 0; /* ลบ padding ของทุกองค์ประกอบ */
+    margin: 0; /* ลบ margin ของทุกองค์ประกอบ */
+    box-sizing: border-box; /* ใช้การคำนวณขนาดที่รวม padding และ border ไว้ในขนาดที่กำหนด */
+}
+
+body {
+    background-image: url('https://s359.kapook.com/pagebuilder/8c047dde-a9f8-43f4-8451-990753c20987.jpg'); /* ตั้งค่าภาพพื้นหลังจาก URL */
+    background-repeat: no-repeat; /* ป้องกันไม่ให้ภาพพื้นหลังทำซ้ำ */
+    background-attachment: fixed; /* ทำให้ภาพพื้นหลังไม่เลื่อนเมื่อผู้ใช้เลื่อนหน้า */
+    background-size: cover; /* ทำให้ภาพพื้นหลังครอบคลุมพื้นที่ทั้งหมดของหน้าจอ */
+    background-position: center; /* จัดตำแหน่งภาพพื้นหลังให้อยู่ตรงกลาง */
+    margin: 0; /* ลบ margin รอบๆ body */
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ของข้อความเป็น Arial หรือ sans-serif */
+}
+
+/* Home Page Styling */
+.home-container {
+    text-align: center; /* จัดข้อความให้ตรงกลาง */
+    margin-top: 50px; /* เพิ่มระยะห่างด้านบน */
+}
+
+.home-container h1 {
+    font-size: 3em; /* ขนาดฟอนต์หัวข้อ h1 */
+    color: #333; /* สีข้อความเป็นเทาเข้ม */
+    margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+.home-container p {
+    font-size: 1.2em; /* ขนาดฟอนต์ของย่อหน้า */
+    color: #555; /* สีข้อความเป็นเทาอ่อน */
+    margin-bottom: 30px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+.home-container ul {
+    list-style-type: none; /* ลบสัญลักษณ์จากรายการใน list */
+    padding: 0; /* ลบ padding ของ list */
+}
+
+.home-container ul li {
+    margin: 15px 0; /* เพิ่มระยะห่างระหว่างรายการแต่ละรายการ */
+}
+
+.home-container a {
+    text-decoration: none; /* ลบขีดเส้นใต้จากลิงก์ */
+    color: white; /* สีข้อความเป็นขาว */
+    background-color: #007BFF; /* สีพื้นหลังของลิงก์ */
+    padding: 15px 30px; /* เพิ่ม padding ให้กับลิงก์ */
+    font-size: 1.3em; /* ขนาดฟอนต์ของลิงก์ */
+    border-radius: 5px; /* ทำให้มุมของปุ่มลิงก์มีความโค้ง */
+    transition: background-color 0.3s ease; /* เพิ่ม transition เมื่อมีการเปลี่ยนแปลงสีพื้นหลัง */
+}
+
+.home-container a:hover {
+    background-color: #0056b3; /* เปลี่ยนสีพื้นหลังของลิงก์เมื่อ hover */
+}
+
+/* Resume Pages Styling */
+.resume-container {
+    padding: 20px; /* เพิ่ม padding รอบๆ กล่อง resume */
+    max-width: 800px; /* กำหนดความกว้างสูงสุดของกล่อง resume */
+    margin: 0 auto; /* จัดให้อยู่กลางหน้าจอ */
+    background-color: white; /* พื้นหลังเป็นสีขาว */
+    border-radius: 10px; /* มุมโค้งของกล่อง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับกล่อง */
+}
+
+.navbar {
+    display: flex; /* ใช้ flexbox ในการจัดการ layout ของ navbar */
+    justify-content: space-around; /* กระจายเนื้อหาของ navbar ให้อยู่ห่างกัน */
+    background-color: #333; /* สีพื้นหลังของ navbar */
+    padding: 10px; /* เพิ่ม padding รอบๆ navbar */
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของ navbar */
+    border-radius: 10px; /* ทำมุมของ navbar ให้โค้ง */
+}
+
+.navbar a {
+    color: white; /* สีข้อความในลิงก์เป็นขาว */
+    text-decoration: none; /* ลบขีดเส้นใต้จากลิงก์ */
+    padding: 10px 20px; /* เพิ่ม padding ให้กับลิงก์ */
+    font-size: 1.1em; /* ขนาดฟอนต์ของลิงก์ */
+    border-radius: 5px; /* ทำให้มุมของลิงก์โค้ง */
+    transition: background-color 0.3s ease; /* เพิ่ม transition เมื่อมีการเปลี่ยนแปลงสีพื้นหลัง */
+}
+
+.navbar a:hover {
+    background-color: #575757; /* เปลี่ยนสีพื้นหลังของลิงก์ใน navbar เมื่อ hover */
+}
+
+/* Section Styling */
+h2 {
+    font-size: 2.5em; /* ขนาดฟอนต์ของหัวข้อ h2 */
+    margin-bottom: 15px; /* เพิ่มระยะห่างด้านล่าง */
+    color: #333; /* สีข้อความเป็นเทาเข้ม */
+}
+
+p {
+    font-size: 1.3em; /* ขนาดฟอนต์ของย่อหน้า */
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+    color: #555; /* สีข้อความเป็นเทาอ่อน */
+}
+
+ul {
+    list-style-type: none; /* ลบสัญลักษณ์จากรายการใน list */
+    padding: 0; /* ลบ padding ของ list */
+}
+
+ul li {
+    font-size: 1.2em; /* ขนาดฟอนต์ของรายการ */
+    margin: 10px 0; /* เพิ่มระยะห่างระหว่างรายการแต่ละรายการ */
+    color: #555; /* สีข้อความของรายการเป็นเทาอ่อน */
+}
+
+/* About Section */
+#about {
+    margin-bottom: 40px; /* เพิ่มระยะห่างด้านล่างของส่วน "About" */
+}
+
+/* Skills Section */
+#skills ul li {
+    font-weight: bold; /* ทำให้ข้อความในรายการของ "Skills" หนา */
+    color: #007BFF; /* สีข้อความในรายการของ "Skills" เป็นสีน้ำเงิน */
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.2em; /* ขนาดฟอนต์ของข้อความในส่วน "Contact" */
+    margin-bottom: 15px; /* เพิ่มระยะห่างด้านล่างของข้อความ */
+}
+
+/* Navbar fix */
+.navbar {
+    position: fixed; /* ทำให้ navbar อยู่คงที่ที่ด้านบนของหน้าจอ */
+    width: 100%; /* กำหนดความกว้างของ navbar ให้เต็มความกว้างหน้าจอ */
+    top: 0; /* ตั้งให้ navbar อยู่ที่ตำแหน่งด้านบนสุด */
+    z-index: 10; /* ตั้งค่า z-index เพื่อให้ navbar อยู่เหนือเนื้อหาที่อื่น */
+}
